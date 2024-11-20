@@ -1,0 +1,237 @@
+.room {
+  width: 30rem;
+  height: 30rem;
+  background-color: #082E60;
+  position: relative;
+  left: 30%;
+  margin: 50px 0;
+}
+.room .window {
+  width: 15rem;
+  height: 15rem;
+  background-color: #82BBDA;
+  position: relative;
+  left: 50%;
+  border: 4px solid gray;
+  cursor: pointer;
+}
+.room .window.active {
+  background-color: black;
+}
+.room .window::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: gray;
+  left: 50%;
+}
+.room .window::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: gray;
+  top: 50%;
+  left: 1px;
+}
+.room .window i {
+  display: none;
+  position: relative;
+  color: white;
+}
+.room .window i.point {
+  display: block;
+}
+.room .window i:nth-child(1) {
+  position: absolute;
+  top: 10%;
+  left: 10px;
+}
+.room .window i:nth-child(2) {
+  position: absolute;
+  top: 30%;
+  left: 50px;
+}
+.room .window i:nth-child(3) {
+  position: absolute;
+  top: 60%;
+  left: 90px;
+}
+.room .window i:nth-child(4) {
+  position: absolute;
+  top: 70%;
+  left: 30px;
+}
+.room .window i:nth-child(5) {
+  position: absolute;
+  top: 70%;
+  left: 10rem;
+}
+.room .window i:nth-child(6) {
+  position: absolute;
+  top: 60%;
+  left: 13rem;
+}
+.room .window i:nth-child(7) {
+  position: absolute;
+  top: 25%;
+  left: 9rem;
+}
+.room .window i:nth-child(8) {
+  position: absolute;
+  top: 12%;
+  left: 13rem;
+}
+.room .picture {
+  cursor: pointer;
+  width: 6rem;
+  height: 5rem;
+  background-color: bisque;
+  position: relative;
+  top: -40%;
+  left: 5%;
+  border: 4px solid rgba(0, 0, 255, 0.708);
+}
+.room .picture i {
+  font-size: 17px;
+  position: relative;
+  left: 5px;
+}
+.room .picture .building {
+  width: 3rem;
+  height: 3rem;
+  background-color: grey;
+}
+.room .picture .building.point {
+  background-color: rgb(220, 181, 241);
+}
+.room .picture .greybuild {
+  width: 30px;
+  height: 7px;
+  background-color: grey;
+  position: relative;
+  bottom: 30px;
+  left: 40px;
+}
+.room .picture .greybuild.point {
+  background-color: rgb(220, 181, 241);
+}
+.room .picture .violetbuild {
+  width: 39px;
+  height: 22px;
+  background-color: rgb(220, 181, 241);
+  position: relative;
+  bottom: 30px;
+  left: 48px;
+}
+.room .picture .violetbuild.point {
+  background-color: grey;
+}
+.room .table {
+  width: 100%;
+  height: 11px;
+  background-color: brown;
+}
+.room .table i {
+  position: relative;
+  bottom: 2rem;
+  left: 75%;
+  font-size: 2rem;
+}
+.room .computer {
+  width: 30%;
+  height: 20%;
+  background-color: rgb(220, 181, 241);
+  border: 10px solid gray;
+  position: relative;
+  bottom: 33%;
+  left: 30%;
+  cursor: pointer;
+}
+.room .computer p {
+  display: none;
+  padding: 5px 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+}
+.room .computer p.active {
+  display: block;
+}
+.room .branch1 {
+  width: 5rem;
+  height: 7px;
+  background-color: gray;
+  position: relative;
+  bottom: 27%;
+  left: 36%;
+}
+.room .branch2 {
+  width: 2rem;
+  height: 2rem;
+  background-color: gray;
+  position: relative;
+  bottom: 35%;
+  left: 41%;
+}
+.room .led-lampa .bottom {
+  width: 15%;
+  height: 7px;
+  background-color: #57AB23;
+  position: absolute;
+  bottom: 33%;
+  left: 20px;
+}
+.room .led-lampa .medium1 {
+  position: absolute;
+  width: 8%;
+  height: 6px;
+  background-color: gray;
+  bottom: 37%;
+  left: 15px;
+  transform: rotate(52deg);
+}
+.room .led-lampa .medium2 {
+  position: absolute;
+  width: 8%;
+  height: 6px;
+  background-color: gray;
+  bottom: 42%;
+  left: 15px;
+  transform: rotate(-52deg);
+}
+.room .led-lampa .top {
+  width: 300px;
+  height: 300px;
+  background-color: #57AB23;
+  clip-path: circle(5% at 50% 3%);
+  transform: rotate(120deg);
+  position: absolute;
+  bottom: 141px;
+  left: -14rem;
+}
+.room .led-lampa .circle {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  clip-path: circle(2% at 50% 100%);
+  transform: rotate(120deg);
+  position: absolute;
+  bottom: -9px;
+  left: 35px;
+  display: none;
+}
+.room .led-lampa .circle.active {
+  display: block;
+}
+.room .led-lampa .point {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  clip-path: circle(17.3% at 50% 100%);
+  position: absolute;
+  bottom: 10.3rem;
+  left: 50px;
+}/*# sourceMappingURL=style.css.map */
